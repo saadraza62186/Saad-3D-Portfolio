@@ -1,5 +1,5 @@
 import React from "react";
-import Tilt from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -8,7 +8,14 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt
+    className="xs:w-[250px] w-full"
+    glareEnable={true}
+    glareMaxOpacity={0.3}
+    scale={1.02}
+    tiltMaxAngleX={20}
+    tiltMaxAngleY={20}
+  >
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -51,13 +58,13 @@ const About = () => {
         development, constantly learning new technologies and building modern,
         high-performance web applications. My focus lies in developing
         optimized, scalable, and secure digital solutions — from UI development
-        to backend architecture and deployment. I&nbsp;ve worked extensively with
-        React-based stacks, particularly Next.js, and have hands-on experience
-        with headless CMS platforms like Sanity.io. I enjoy working with
-        JavaScript and TypeScript, and often use Jamstack technologies (Next.js
-        / Sanity.io / Tailwind CSS / Firebase, etc.) to create blazing-fast,
-        SEO-optimized, serverless websites that deliver a smooth and modern user
-        experience.
+        to backend architecture and deployment. I&nbsp;ve worked extensively
+        with React-based stacks, particularly Next.js, and have hands-on
+        experience with headless CMS platforms like Sanity.io. I enjoy working
+        with JavaScript and TypeScript, and often use Jamstack technologies
+        (Next.js / Sanity.io / Tailwind CSS / Firebase, etc.) to create
+        blazing-fast, SEO-optimized, serverless websites that deliver a smooth
+        and modern user experience.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
