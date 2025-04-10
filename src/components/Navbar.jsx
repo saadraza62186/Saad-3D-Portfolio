@@ -42,10 +42,9 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src="/src/assets/tech/saad.jpg" alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Saad &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+            <span className='sm:block hidden'> | Frontened Developer</span>
           </p>
         </Link>
 
