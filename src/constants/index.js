@@ -28,6 +28,9 @@ import {
 import Ska from "../assets/company/Ska.png";
 import Fiver from "../assets/company/Fiverr.png";
 import Upwork from "../assets/company/upwork.png";
+import Pro1 from "../assets/pro1.png";
+import Pro2 from "../assets/pro2.png";
+import Pro3 from "../assets/pro3.png";
 export const navLinks = [
   {
     id: "about",
@@ -98,10 +101,6 @@ const technologies = [
   {
     name: "MongoDB",
     icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
@@ -190,67 +189,56 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "FoodTuck Website",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A web-based UI that showcases nearby food tuck, their menus, and real-time availability in a visually engaging and user-friendly layout.",
     tags: [
       {
-        name: "react",
+        name: "next",
         color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: Pro1,
+    source_code_link:
+      "https://github.com/saadraza62186/FoodTuck-Restraunt-NextJS.git",
   },
   {
-    name: "Job IT",
+    name: "Qarz e Hasna",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A clean and intuitive UI designed to facilitate the process of applying, tracking, and managing interest-free loans (Qarz-e-Hasna) with ease and transparency.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: Pro2,
+    source_code_link: "https://github.com/saadraza62186/Hackathon-SMIT.git",
   },
   {
-    name: "Trip Guide",
+    name: "YouTube Clone",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A responsive and modern UI clone of YouTube, featuring video thumbnails, search functionality, side navigation, and a clean layout optimized for content discovery.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
+        name: "styled-components",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: Pro3,
+    source_code_link: "https://github.com/saadraza62186/YoutubeClone-ReactJS.git",
   },
 ];
 
